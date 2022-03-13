@@ -1,0 +1,609 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Open+Sans:wght@300&display=swap');
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+    background-color: cornflowerblue;
+    height: 80px;
+    color: #fff;
+    
+   
+    z-index: 20;
+  
+}
+.nav_logo{
+ font-size: 1.5rem;
+ font-weight: 900;
+}
+.nav_continer{
+ display: flex;
+ height: 100%;
+ width: 90%;
+ margin: 0 auto;
+ justify-content: space-between;
+ align-items: center;
+}
+.nav_input,.nav_label{
+    display: none;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+      background-color: #59656F;
+  
+}
+.img__pore{
+    width:50%;
+}
+.img_por{
+    width: 100%;
+    height:auto;
+    display: block;
+   animation-name:movimiento;
+   animation-duration: 3.5s;
+ 
+   
+    margin:20px 0;
+}
+.nav_menu{
+    display: grid;
+   grid-auto-flow: column;
+   gap: 3em;
+
+
+   
+}
+.nav_item{
+    color:#fff ;
+    text-decoration: none;
+    font-size: 20px;
+   --clippy: polygon(0 1%, 0 0, 0 100%, 0% 100%);
+  
+}
+.nav_item::after{
+    content: "";
+    display: block;
+    background-color: #fff;
+    width: 90%;
+    margin-bottom: 3px;
+    height: 3px;
+    clip-path: var(--clippy);
+     transition:clip-path .3s ease-in-out ;
+ 
+}
+.nav_item:hover{
+    --clippy: polygon(0 1%, 100% 0, 100% 100%, 0 100%);
+}
+.destok_logotipo{
+    width: 20%;
+}
+.destok_titulo{
+    position: relative;
+    right: 30%;
+}
+.destok_tituloportada{
+    position: absolute;
+    bottom: 60%;
+    left: 35%;
+    font-size: 50px;
+    color: #fff;
+    font-weight:900;
+    text-shadow: 0 0 2px black;
+}
+.color{
+    color: cornflowerblue;
+
+}
+header{
+    background: #003973;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E5E5BE, #003973);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E5E5BE, #003973); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+ height: auto;
+ 
+ width: auto;
+}
+.destok{
+    width: 0%;
+}
+.destok{
+    width: 40%;
+  
+}
+.contenedorportada{
+  display: flex;
+  width: 95%;
+  align-items: center;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 0%;
+  
+  
+}
+
+
+
+
+
+.mapa{
+   outline: #003973;
+}
+.wave{
+    height: 100px;
+    background: #003973;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E5E5BE, #003973);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E5E5BE, #003973); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+}
+h2{
+    animation-name:movimiento1;
+    animation-duration: 3.5s;
+    font-size: 1.5rem;
+}
+.h2{
+    font-size:2.5em ;
+    color: #fff;
+  
+  
+}
+etras_cartas1{
+    width: 50%;
+   
+}
+.destok{
+    margin: 10px;
+}
+
+span{
+   color:cornflowerblue ; 
+}
+.btn_portada{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+ 
+   
+    margin-left:110px ;
+    margin-top:40px ;
+    font-size: 1.5em;
+    animation-name:movimiento;
+   animation-duration: 3.5s;
+ 
+}
+.imglogowhats{
+    width: 70px;
+    position: relative;
+    top: 20px;
+}
+.img_box{
+    width: 50%;
+}
+.box_cartas{
+    display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-around;
+  
+}
+.box_img{
+    width: 100%;
+    margin: 5% 0 ;
+  
+}
+.box_btn:hover{
+    background: #003973;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E5E5BE, #003973);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E5E5BE, #003973); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   
+}
+.box_btn{
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid cornflowerblue ;
+    font-size: 1.2rem;
+    margin-left:30%;
+    position: relative;
+    top: 20px;
+   color: cornflowerblue;
+   padding: 0 10px;
+   border-radius: 30px;
+   font-weight: bold;
+
+}
+footer{
+    background: #003973;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E5E5BE, #003973);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E5E5BE, #003973); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+}
+.container__footer{
+    display: flex;
+    
+    flex-wrap: wrap;
+   justify-content:space-evenly;
+}
+.box_redes{
+   width: 40%;
+   display: flex;
+   flex-direction:column ;
+   justify-content: end;
+ 
+}
+.wave2{
+    width: 100%;
+    height: 100px;
+    background: #003973;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E5E5BE, #003973);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E5E5BE, #003973); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+}
+.copy{
+  display: flex;
+  justify-content: center;
+   font-size: 30px;
+}
+.descricion_footer{
+    width: 10%;
+ 
+}
+.contactos_footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.img_footer{
+    width: 50%;
+}
+.box_btn:hover{
+   
+    color: #fff;
+}
+.box_descrition{
+    width: 30%;
+    margin: 20px 0;
+  
+    
+}
+.formulario_css{
+ 
+  width: 70%;
+  display: grid;
+  
+ 
+}
+.icono_whatssap{
+    width: 100px;
+    
+}
+.whatsapp_text{
+    color: #fff;
+    position: relative;
+    bottom: 30px;
+    right: 30px;
+}
+.colorfrom{
+    background-color: rgb(129, 156, 230);
+    width: 180px;
+}
+.contenedor_formulario{
+    width:150% ;
+}
+.parafo_abaoutus{
+    width: 100%;
+}
+.inputr{
+    margin-bottom: 20px;
+    width: 120%;
+    margin-left: 10%;
+   
+ 
+}
+textarea{
+    max-width: 180px;
+    min-width: 130px;
+    max-height: 150px;
+    min-height: 150px;
+}
+.inputw{
+    height: 30px;
+}
+.box_fomulario_abaout{
+   display: flex;
+   justify-content:space-around;
+   flex-wrap: wrap;
+}
+.continer_aboutus{
+  width: 40%;
+  background-color: #E5E5BE;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px 5px ;
+  
+}
+.img_about{
+    width: 80%;
+    margin-left: 10%;
+}
+.contenedor_formulario{
+    width: 30%;
+}
+.continer_img_aboutus{
+ text-align: center;
+
+}
+.footer_contacto_enlace{
+text-decoration: none;
+color: #fff;
+font-weight: bold;
+}
+.copy_contactos{
+  font-size: 40px;
+}
+.btn_portada:hover{
+   background-color: green ; 
+   color: #fff;
+   outline: 3px solid #fff ;
+   border-radius: 30px;
+}
+@keyframes movimiento{
+    0%{
+        opacity: 0;
+        transform: translateX(150px);
+    }
+    100%{
+        opacity: 1;
+        transform: translatex(0);
+    }
+}
+@keyframes movimiento1{
+    0%{
+        opacity: 0;
+        transform: translateX(-150px);transition: all 4s ease-in-out;
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
+/*De aqui para abajo es el diseño adactable a dispositivos moviles*/
+@media  (max-width:800px){
+    
+ 
+    .nav_label{
+        display: block;
+        cursor: pointer;
+    }
+  .nav_menu{
+      position:fixed;
+      top: 11%;
+      bottom: 0;
+      background-color: cornflowerblue;
+      width: 100%;
+      left: 0;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      align-items:center;
+      clip-path: circle(0 at center);
+      transition: clip-path .3s ease-in-out;
+      height: 30%;
+      font-size: 5px;
+      z-index: 10;
+     
+      
+
+ 
+    
+}
+.img__pore{
+    display: flex;
+    
+}
+
+
+
+  .nav_input:checked+.nav_menu{
+    clip-path: circle(100%);
+ }
+ .nav_logo{
+     position:absolute;
+     left: 30%;
+     font-size: 20px;
+ }
+ .img_box{
+    width: 100%;
+ }
+ 
+ .box_img{
+    width: 100%;
+ }
+ .box_descrition{
+    width: 100%;
+ }
+ .contenedor_logotipo{
+     width: 20%;
+ }
+ .logo_tipo{
+ width: 100%;
+ }
+ .foto_portada{
+     width: 100%;
+ }
+ .titulo {
+     position:absolute;
+     top: 12%;
+     left:23%;
+     font-size: 30px;
+     font-weight: 900;
+     color: #fff;
+     text-shadow: 0 0 8px rgb(0, 0, 0,10.5);
+     z-index: 10;
+
+ }
+ .color{
+     color:cornflowerblue;
+     font-size: 30px;
+ }
+ .dos{
+     position: absolute;
+     top: 20%;
+     left:2%;
+     color: #fff;
+     text-shadow: 0 0 8px rgb(0, 0, 0,10.5);
+     font-size: 15px;
+     font-weight: 900;
+ }
+  .btn{
+    text-decoration: none;
+     border: 1px  solid  #fff ;
+     font-size: 20px;
+     position: absolute;
+     left: 35%;
+     width: auto;
+     padding: 3px;
+     top: 25%;
+     color: #fff;
+     background-color:cornflowerblue ;
+     border-radius: 10px 0px;
+  }
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+ 
+}
+
+.parafo_abaoutus{
+    width: 100%;
+}
+
+/*aqui esta car us*/
+.car_us{
+    width: 90%;
+    max-width: 400px;
+    background-color: #fff;
+    display:block;
+    text-align: center;
+    box-shadow: 5px 5px 20px;
+    border-radius: 100%;
+    margin-bottom: 20px;
+}
+.text_usabout{
+    margin-top: 10%; 
+}
+.img_carus{
+    margin-top: 5%;
+}
+.text_us{
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    
+}
+.img_us_us{
+    width: 30%;
+}
+/*esta aqui*/
+
+
+
+
+
+ 
+  .parrafo_sobre{
+      width: 100%;
+      margin-left: 25%;
+      font-size: 1.5rem;
+      font-weight: bold;
+       
+  }
+
+
+ footer{
+     width:100%;
+     background-color: cornflowerblue;
+     
+ }
+
+
+ .container__footer{
+     
+   
+    justify-content:space-between;
+    
+    margin: auto;
+    
+ }
+ .img_footer{
+     width: 20%;
+ }
+.fa-brands{
+     font-size: 15px;
+     color: #fff;
+     position: relative;
+     left: 30px;
+     
+ }
+ .redes{
+     text-decoration: none;
+     color: #fff;
+     font-weight: 900;
+     width: 90%;
+ }
+ .redes,.fa-brands:hover{
+     color:black ;
+ }
+ .fa-brands{
+     position: relative;
+    
+ }
+ .foter p{
+     width: 50%;
+ }
+ .titulo_redes{
+     font-size:15px;
+     position: relative;
+     left: 46%;
+     width: 10%;
+ }
+ .ter_titulo{
+     width: 50%;
+ }
+ .portada{
+     display: flex;
+     justify-content:space-around;
+ }
+ .copy{
+     width: 100%;
+     font-size: 10px;
+ }
+ .conten_copy{
+     width: 100%; 
+ }
+ .btn_apartamento{
+     position:relative;
+     top: 10px;
+    width:90px;
+ }
